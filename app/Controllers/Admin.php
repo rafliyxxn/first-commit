@@ -545,48 +545,62 @@ public function cetak_rekap_permintaan() {
 
 public function cetak_berita_acara()
 {
-    // Mengambil nomor nota dari input GET (URL)
     $no_nota = $this->request->getGet('no_nota');
 
-    // 1. QUERY TRANSAKSI UTAMA
-    // Mencari berdasarkan kolom 'no_permintaan'
+    // Ambil data transaksi utama (Pastikan nomor nota ada di database ya!)
     $transaksi = $this->db->table('t_permohonan')
         ->join('users', 'users.id_user = t_permohonan.id_user', 'left') 
         ->where('no_permintaan', $no_nota) 
         ->get()->getRowArray();
 
     if (!$transaksi) {
-        return "Gagal: Nomor Permintaan ". htmlspecialchars($no_nota) ." tidak ditemukan di database.";
+        return "Gagal Generate: Data dengan nomor " . htmlspecialchars($no_nota) . " belum ada di tabel t_permohonan kamu.";
     }
 
-    // 2. QUERY DETAIL BARANG
-    // Mengambil id_permohonan dari hasil query pertama untuk mencari detailnya
-    $id_permohonan = $transaksi['id_permohonan'];
-
+    // Ambil data barang yang diminta
     $items = $this->db->table('t_permohonan_detail')
         ->join('m_barang', 'm_barang.id_barang = t_permohonan_detail.id_barang')
-        ->where('id_permohonan', $id_permohonan) // Menggunakan id_permohonan
+        ->where('id_permohonan', $transaksi['id_permohonan'])
         ->get()->getResultArray();
 
-    // 3. DATA DIKIRIM KE VIEW
+    // ---------------------------------------------------------
+    // LOGIKA FORMAT TANGGAL & NAMA PENANGGUNG JAWAB SESUAI FOTO
+    // ---------------------------------------------------------
+    $tgl = strtotime($transaksi['tgl_mohon'] ?? date('Y-m-d')); 
+    $hari_array = ['Sunday' => 'Minggu', 'Monday' => 'Senin', 'Tuesday' => 'Selasa', 'Wednesday' => 'Rabu', 'Thursday' => 'Kamis', 'Friday' => 'Jumat', 'Saturday' => 'Sabtu'];
+    $bulan_array = ['01' => 'Januari', '02' => 'Pebruari', '03' => 'Maret', '04' => 'April', '05' => 'Mei', '06' => 'Juni', '07' => 'Juli', '08' => 'Agustus', '09' => 'September', '10' => 'Oktober', '11' => 'Nopember', '12' => 'Desember'];
+    $tahun_terbilang = ['2023' => 'Dua Ribu Dua Puluh Tiga', '2024' => 'Dua Ribu Dua Puluh Empat', '2025' => 'Dua Ribu Dua Puluh Lima', '2026' => 'Dua Ribu Dua Puluh Enam', '2027' => 'Dua Ribu Dua Puluh Tujuh'];
+
     $data = [
         'transaksi'   => $transaksi,
         'items'       => $items,
         'nomor_ba'    => $no_nota,
-        'petugas'     => 'Nandang.K.',
-        'nip_petugas' => '19810123 202521 1 024'
+        'hari'        => $hari_array[date('l', $tgl)],
+        'tgl_angka'   => date('d', $tgl),
+        'bulan_huruf' => $bulan_array[date('m', $tgl)],
+        'tahun_huruf' => $tahun_terbilang[date('Y', $tgl)] ?? date('Y', $tgl),
+        'periode'     => $bulan_array[date('m', $tgl)] . ' ' . date('Y', $tgl)
     ];
 
-    // Load template HTML untuk PDF
+    // Ngambil list nama dari tabel
+    $pj_string = $transaksi['penanggung_jawab'] ?? '';
+    $data['list_pj'] = array_filter(array_map('trim', explode(',', $pj_string)));
+
+    // Render ke View HTML dulu
     $html = view('admin/v_cetak_berita_acara', $data);
 
-    // 4. PROSES PEMBUATAN PDF
-    $dompdf = new \Dompdf\Dompdf();
+    // ---------------------------------------------------------
+    // PROSES GENERATE KE PDF (DOMPDF)
+    // ---------------------------------------------------------
+    $options = new \Dompdf\Options();
+    $options->set('isRemoteEnabled', true); // Wajib True biar logo bisa di-generate
+    
+    $dompdf = new \Dompdf\Dompdf($options);
     $dompdf->loadHtml($html);
     $dompdf->setPaper('A4', 'portrait');
     $dompdf->render();
     
-    // Tampilkan di browser
-    $dompdf->stream("Berita_Acara_". str_replace('/', '_', $no_nota) .".pdf", ["Attachment" => 0]);
+    // Output langsung ke Browser berupa file PDF
+    $dompdf->stream("Berita_Acara_ATK_".$no_nota.".pdf", ["Attachment" => 0]);
 }
 }
