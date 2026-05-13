@@ -1,0 +1,365 @@
+DEBUG - 2026-05-13 01:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 01:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 01:30:53 --> Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:30:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_keluar' doesn't exist
+[Method: GET, Route: admin/laporan/cetak_berita_acara]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:30:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:30:53 --> [Caused by] mysqli_sql_exception: Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-13 01:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 01:39:07 --> Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:39:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_keluar' doesn't exist
+[Method: GET, Route: admin/laporan/cetak_berita_acara]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:39:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:39:07 --> [Caused by] mysqli_sql_exception: Table 'tik_pn.t_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_keluar`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_keluar`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-13 01:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 01:40:56 --> Table 'tik_pn.m_ruangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:40:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.m_ruangan' doesn't exist
+[Method: GET, Route: admin/laporan/cetak_berita_acara]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:40:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.m_ruangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:40:56 --> [Caused by] mysqli_sql_exception: Table 'tik_pn.m_ruangan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `m_ruangan` ON `m_ruangan`.`id_ruangan` = `t_permohonan`.`id_ruangan`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-13 01:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-13 01:50:52 --> Unknown column 'no_nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:50:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'no_nota' in 'where clause'
+[Method: GET, Route: admin/laporan/cetak_berita_acara]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:50:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'no_nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-13 01:50:52 --> [Caused by] mysqli_sql_exception: Unknown column 'no_nota' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = \'FP/TSM/C02\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_permohonan`
+JOIN `users` ON `users`.`id_user` = `t_permohonan`.`id_user`
+WHERE `no_nota` = :no_nota:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(555): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_berita_acara()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-13 02:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

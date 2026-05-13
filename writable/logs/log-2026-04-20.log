@@ -1,0 +1,645 @@
+ERROR - 2026-04-20 07:56:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 07:56:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 07:59:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 07:59:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 08:00:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 08:00:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 08:01:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 08:01:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 08:01:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 08:01:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 08:02:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 08:02:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+ERROR - 2026-04-20 08:04:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\tik_pn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\tik_pn\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\tik_pn\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\tik_pn\system\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\tik_pn\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\tik_pn\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+#7 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp1\htdocs\tik_pn\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\tik_pn\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\tik_pn\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp1\htdocs\tik_pn\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp1\htdocs\tik_pn\system\rewrite.php(44): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2026-04-20 08:04:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: auth/login_process]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Auth->login_process()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-04-20 08:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 09:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 09:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 09:25:59 --> Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:25:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:25:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:25:59 --> [Caused by] mysqli_sql_exception: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-04-20 09:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 09:26:01 --> Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:01 --> [Caused by] mysqli_sql_exception: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-04-20 09:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 09:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-20 09:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 09:26:14 --> Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-04-20 09:26:14 --> [Caused by] mysqli_sql_exception: Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(16): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-04-20 09:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-20 09:28:39 --> Unknown column 'jumlah_stok' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `m_barang`
+WHERE `jumlah_stok` < :jumlah_stok:', [...], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(17): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')

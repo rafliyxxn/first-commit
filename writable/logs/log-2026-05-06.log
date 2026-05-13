@@ -1,0 +1,1665 @@
+DEBUG - 2026-05-06 07:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 07:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 08:09:17 --> Table 'tik_pn.t_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= :stok:
+ LIMIT 3', [...], false)
+ 5 APPPATH\Controllers\Admin.php(39): CodeIgniter\Database\BaseBuilder->get(3)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 08:09:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_barang' doesn't exist
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= :stok:
+ LIMIT 3', [...], false)
+ 2 APPPATH\Controllers\Admin.php(39): CodeIgniter\Database\BaseBuilder->get(3)
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 08:09:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tik_pn.t_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= :stok:
+ LIMIT 3', [...], false)
+ 4 APPPATH\Controllers\Admin.php(39): CodeIgniter\Database\BaseBuilder->get(3)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 08:09:17 --> [Caused by] mysqli_sql_exception: Table 'tik_pn.t_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `t_barang`
+WHERE `stok` <= 5
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_barang`
+WHERE `stok` <= :stok:
+ LIMIT 3', [...], false)
+ 5 APPPATH\Controllers\Admin.php(39): CodeIgniter\Database\BaseBuilder->get(3)
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 08:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 08:25:00 --> ErrorException: Undefined array key "created_at"
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\v_dashboard.php on line 76.
+ 1 APPPATH\Views\admin\v_dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\v_dashboard.php', 76)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\v_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(67): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 08:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 08:33:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_template.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_template.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('v_template', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(68): view('admin/v_dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 08:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 08:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:23:54 --> Unknown column 'tp.no_faktur' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(360): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:23:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_faktur' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(360): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:23:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_faktur' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(360): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:23:54 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.no_faktur' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(360): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_faktur, tp.tanggal_pembelian, mb.nama_barang, tpd.jumlah, tpd.harga_satuan, (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 09:24:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_stok_opname.php"
+[Method: GET, Route: admin/laporan/stok_opname]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_stok_opname.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_stok_opname', [], true)
+ 3 APPPATH\Controllers\Admin.php(402): view('admin/cetak/v_cetak_stok_opname', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_opname()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:24:21 --> Unknown column 'kode_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(414): CodeIgniter\Database\BaseConnection->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kode_barang' in 'field list'
+[Method: GET, Route: admin/laporan/stok_bulanan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(414): CodeIgniter\Database\BaseConnection->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kode_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(414): CodeIgniter\Database\BaseConnection->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:21 --> [Caused by] mysqli_sql_exception: Unknown column 'kode_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(414): CodeIgniter\Database\BaseConnection->query('
+        SELECT kode_barang, nama_barang, kategori, stok, satuan 
+        FROM m_barang 
+        ORDER BY nama_barang ASC
+    ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:24:25 --> Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(439): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_permohonan' in 'field list'
+[Method: GET, Route: admin/laporan/rekap_permintaan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(439): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(439): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:24:25 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(439): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:27:07 --> Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:07 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:27:24 --> Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:27:24 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 09:32:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_barang_masuk.php"
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_barang_masuk.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_barang_masuk', [], true)
+ 3 APPPATH\Controllers\Admin.php(383): view('admin/cetak/v_cetak_barang_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 09:34:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_barang_masuk.php"
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_barang_masuk.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_barang_masuk', [], true)
+ 3 APPPATH\Controllers\Admin.php(383): view('admin/cetak/v_cetak_barang_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:35:26 --> Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tpd.jumlah' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:26 --> [Caused by] mysqli_sql_exception: Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:35:44 --> Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tpd.jumlah' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:35:44 --> [Caused by] mysqli_sql_exception: Unknown column 'tpd.jumlah' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tgl_nota ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(361): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.no_nota, 
+            tp.tgl_nota, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tgl_nota BETWEEN ? AND ?
+        ORDER BY tp.tgl_nota ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-06 09:36:01 --> Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:36:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:36:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-06 09:36:01 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.tanggal_pembelian' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN \'2026-03-01\' AND \'2026-04-01\'
+        ORDER BY tp.tanggal_pembelian ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(362): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            tp.id_pembelian, 
+            tp.tanggal_pembelian, 
+            mb.nama_barang, 
+            tpd.jumlah, 
+            tpd.harga_satuan, 
+            (tpd.jumlah * tpd.harga_satuan) as total
+        FROM t_pembelian_detail tpd
+        JOIN t_pembelian tp ON tpd.id_pembelian = tp.id_pembelian
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE tp.tanggal_pembelian BETWEEN ? AND ?
+        ORDER BY tp.tanggal_pembelian ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 09:36:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_barang_masuk.php"
+[Method: GET, Route: admin/laporan/barang_masuk]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_barang_masuk.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_barang_masuk', [], true)
+ 3 APPPATH\Controllers\Admin.php(383): view('admin/cetak/v_cetak_barang_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_barang_masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-06 09:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-06 09:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-06 09:50:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_stok_akhir.php"
+[Method: GET, Route: admin/laporan/stok_bulanan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_stok_akhir.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_stok_akhir', [], true)
+ 3 APPPATH\Controllers\Admin.php(465): view('admin/cetak/v_cetak_stok_akhir', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')

@@ -1,0 +1,250 @@
+DEBUG - 2026-05-11 03:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-11 03:14:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/cetak/v_cetak_stok_akhir.php"
+[Method: GET, Route: admin/laporan/stok_bulanan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cetak/v_cetak_stok_akhir.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_stok_akhir', [], true)
+ 3 APPPATH\Controllers\Admin.php(465): view('admin/cetak/v_cetak_stok_akhir', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_stok_bulanan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-11 03:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-11 03:16:42 --> Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(481): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-11 03:16:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_permohonan' in 'field list'
+[Method: GET, Route: admin/laporan/rekap_permintaan]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 APPPATH\Controllers\Admin.php(481): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-11 03:16:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 APPPATH\Controllers\Admin.php(481): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+CRITICAL - 2026-05-11 03:16:42 --> [Caused by] mysqli_sql_exception: Unknown column 'tp.no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = \'05\' AND YEAR(tp.tanggal_permohonan) = \'2026\'
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ')
+ 4 APPPATH\Controllers\Admin.php(481): CodeIgniter\Database\BaseConnection->query('
+        SELECT tp.no_permohonan, tp.tanggal_permohonan, tp.nama_ruangan, mb.nama_barang, tpd.jumlah_diminta, tpd.jumlah_disetujui, mb.satuan, tp.status
+        FROM t_permohonan_detail tpd
+        JOIN t_permohonan tp ON tpd.id_permohonan = tp.id_permohonan
+        JOIN m_barang mb ON tpd.id_barang = mb.id_barang
+        WHERE MONTH(tp.tanggal_permohonan) = ? AND YEAR(tp.tanggal_permohonan) = ?
+        ORDER BY tp.tanggal_permohonan ASC, tp.nama_ruangan ASC
+    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-11 03:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-11 03:22:06 --> ErrorException: Undefined variable $bulan
+[Method: GET, Route: admin/laporan/rekap_permintaan]
+in APPPATH\Views\admin\cetak\v_cetak_rekap_permintaan.php on line 22.
+ 1 APPPATH\Views\admin\cetak\v_cetak_rekap_permintaan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\cetak\\v_cetak_rekap_permintaan.php', 22)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\cetak\\v_cetak_rekap_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_rekap_permintaan', [], true)
+ 5 APPPATH\Controllers\Admin.php(513): view('admin/cetak/v_cetak_rekap_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-11 03:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-11 03:24:45 --> ErrorException: Undefined array key "no_permohonan"
+[Method: GET, Route: admin/laporan/rekap_permintaan]
+in APPPATH\Views\admin\cetak\v_cetak_rekap_permintaan.php on line 47.
+ 1 APPPATH\Views\admin\cetak\v_cetak_rekap_permintaan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_permohonan"', 'C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\cetak\\v_cetak_rekap_permintaan.php', 47)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\xampp1\\htdocs\\tik_pn\\app\\Views\\admin\\cetak\\v_cetak_rekap_permintaan.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/cetak/v_cetak_rekap_permintaan', [], true)
+ 5 APPPATH\Controllers\Admin.php(513): view('admin/cetak/v_cetak_rekap_permintaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->cetak_rekap_permintaan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-11 03:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 03:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 04:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 04:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 04:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 04:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 04:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-11 04:36:06 --> Error: Class "Google\Cloud\Vision\V1\ImageAnnotatorClient" not found
+[Method: POST, Route: admin/review_nota]
+in APPPATH\Controllers\Admin.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin->review_nota()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp1\\htdocs\\tik_pn\\public\\index.php')
+DEBUG - 2026-05-11 05:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 05:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 05:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 05:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 05:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 06:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-11 07:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
